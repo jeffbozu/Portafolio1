@@ -1,0 +1,154 @@
+nav {
+    background-color: black;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: flex-end;
+    width: 100%;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    text-transform: uppercase;  /*que este todo en mayuscula */
+    font-weight: 700;   /*grosor negrita*/
+    padding: 0.5rem;
+}
+
+nav a:hover {
+    background-color: coral;
+}
+
+
+body {
+    margin: 0;
+    background-color: rgb(41, 41, 41);
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+.title {
+    color: rgb(180, 90, 0);
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 4rem 0; 
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    min-width: 40%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario label {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.formulario__input {
+    padding: 0.8rem 1rem;
+    margin: 0,5rem 0;
+    border: solid 1px white;
+    border-radius:  20px;
+    color: coral;
+    font-size:  1rem;
+    box-sizing: border-box;
+}
+
+.formulario__input:focus {
+    border: solid 3px chocolate;
+    outline: none;
+    transition: ease-in 0.5s ; 
+}
+
+.formulario__input::placeholder {
+    color: lightgray;
+    font-family: "Roboto", sans-serif;
+}
+
+.formulario__select {
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    color: chocolate;
+    font-family: "Roboto", sans-serif;
+}
+
+.formulario__checkbox-container {
+    margin: 0.8rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.formulario__label--vip {
+    display: inline-block;
+}
+
+.formulario__checkbox {
+    appearance: none;
+    background-color: white;
+    border: solid 1px white;
+    padding: 0.7rem;
+    margin-left: 0.5rem;
+    border-radius: 3px;
+    position: relative;
+}
+
+.formulario__checkbox:checked {
+background-color: chocolate;
+border: solid 1px white;
+}
+
+.formulario__checkbox:checked::after {
+    content: "\2713";
+    font-size: 1rem;
+    position: absolute;
+    top: 1px;
+    left: 5px;
+    color: black;
+}
+
+.formulario__textarea {
+    font-family: "Roboto", sans-serif;
+    height: 10;
+    padding: 1rem 1.2rem;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-size: 1rem; 
+}
+
+.formulario__input--date{
+    font-family: "Roboto", sans-serif;  
+}
+
+.formulario__textarea::placeholder {
+    font-family: "Roboto", sans-serif; 
+    color: lightgray;
+}
+
+.formulario__textarea:focus {
+    outline: none;
+}
+
+.formulario__btn-submit {
+    background-color: chocolate;
+    width: 100px;
+    border: none;
+    border-radius: 25px;
+    padding:  1rem 2rem;
+    color: rgb(12, 12, 12);
+    margin: 2rem auto;
+    cursor: pointer; 
+}

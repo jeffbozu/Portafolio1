@@ -1,0 +1,209 @@
+
+/* selectores por etiqueta*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    background-color: aliceblue;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    margin: 0;
+    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+nav {
+    background-color: black;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+
+}
+
+footer {
+    background-color: black;
+    height: 5rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
+.section-container {
+    max-width: 100vw;  
+    min-height: 100vh;
+    display: flex; 
+}
+
+.section1 {
+     background-color: black;
+     color: white;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.section2 {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section1 p {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+.paragraph {
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    .section1 {
+        flex-direction: column;
+    }
+    .tex-container {
+        text-align: center;
+    }
+}
+
+.myName {
+    color: chocolate;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1.5rem;
+    text-transform: uppercase;  /*que este todo en mayuscula */
+    font-weight: 700;   /*grosor negrita*/
+    padding: 0.5rem;
+}
+
+/* pseudo clase */
+
+nav a:hover {
+    background-color: coral;
+
+}
+
+
+.profile-img {
+    width: 300px;
+    border-radius: 50%;
+    border: solid 15px cornsilk;
+}
+
+.footer-link-container {
+    width: 30%;
+    display: flex;
+    justify-content: space-between
+}
+
+table, th, td {
+    border: solid 2px black;
+    border-collapse: collapse
+}
+
+thead {
+    background-color: rgb(171, 171, 171);
+    color: white;
+    font-size: 1.5rem;
+}
+
+table {
+    border: solid 2px grey;
+    text-align: center;
+    font-size: 1.5rem;
+    table-layout: fixed;
+}
+
+thead th:nth-child(1) {
+    width: 25rem;
+    padding: 1rem;
+}
+
+thead th:nth-child(2) {
+    width: 25rem;
+    padding: 1rem;
+}
+
+tr td {
+    padding: 0.5rem;
+}
+
+tbody {
+    background-color: rgb(244, 244, 243);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px 20px;
+    background-color: darkgoldenrod;
+}
+
+/*** BEM**/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;   /** si entramos en modo reponsive se adapte **/
+    justify-content: space-around;
+    padding: 100px 20px;
+    background-color: chocolate;
+}
+
+.gallery__item {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 80%;
+height: 200px;
+margin: 20px;
+border-radius: 20px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center center;
+
+}
+
+.gallery__item--item1 {
+    background-image: url(../images/PROYECTO.jpg);
+}
+
+.gallery__item--item2 {
+    background-image: url(../images/PORTAFOLIO.jpg);
+}
+
+.gallery__item--item3 {
+    background-image: url(../images/VOLUNTARIADO.jpg);  
+}
+
+.gallery__title {
+    padding: 10 px;
+    border-radius: 10 px;
+    margin: 10px;
+    background-color: rgb(170, 164, 164, 0.5);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700px;
+    cursor: pointer;
+}
